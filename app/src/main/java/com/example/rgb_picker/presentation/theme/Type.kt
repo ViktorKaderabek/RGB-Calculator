@@ -1,4 +1,4 @@
-package com.example.rgb_picker.ui.theme
+package com.example.rgb_picker.presentation.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
