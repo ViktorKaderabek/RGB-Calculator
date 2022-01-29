@@ -1,6 +1,8 @@
 package com.example.rgb_picker
 
 import android.app.Application
+import com.example.rgb_picker.di.AppModule
+import com.example.rgb_picker.di.colorDetailViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -9,7 +11,7 @@ class App : Application() {
         super.onCreate()
         startKoin{
             androidContext(this@App)
-            modules(listOf())
+            modules(listOf(AppModule, colorDetailViewModel))
         }
     }
 }
