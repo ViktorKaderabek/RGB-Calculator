@@ -38,6 +38,6 @@ val AppModule = module {
 
 val colorDetailViewModel = module {
     viewModel{
-        ColorDetailViewModel()
+        ColorDetailViewModel(get())
     }
 }
