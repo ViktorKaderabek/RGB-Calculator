@@ -3,9 +3,10 @@ package com.example.rgb_picker.data.remote
 import com.example.rgb_picker.data.remote.dto.ColorDetailDto
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface ThecolorApi {
 
-    @GET("/{id?rgb=x,x,x}")
-    suspend fun getCoinsByRgb(@Path("id?rgb=0,71,171") rgbColor : String) : ColorDetailDto
+    @GET("/id{rgb}")
+    suspend fun getCoinsByRgb(@Path("rgb") rgb : String) : ColorDetailDto
 }

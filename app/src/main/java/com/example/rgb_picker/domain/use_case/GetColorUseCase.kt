@@ -17,6 +17,7 @@ class GetColorUseCase(
         try {
             val color = repository.getCoinsByRgb(rgbColor).toColor()
             emit(Resources.Sucess<ColorModel>(color))
+            Log.e("message", "Success")
         }
         catch (e : Exception){
             Log.e("message", e.toString())

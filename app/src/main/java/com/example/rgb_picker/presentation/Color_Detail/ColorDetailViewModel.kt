@@ -21,7 +21,7 @@ class ColorDetailViewModel(
     private val rgbColor : String = "id?rgb=${r},${g},${b}"
 
     init {
-        getColorsByRgb(rgbColor)
+        getColorsByRgb("id?rgb=0,71,171")
     }
 
     private fun getColorsByRgb(rgbColor : String) {
