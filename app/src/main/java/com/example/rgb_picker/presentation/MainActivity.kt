@@ -48,7 +48,7 @@ fun ColorDetailScreen() {
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
                         Text(
-                            text = "${color.name.toString()}",
+                            text = color.name.value,
                             fontSize = 20.sp,
                             modifier = Modifier.weight(8f),
                             fontWeight = FontWeight.Bold,
@@ -57,14 +57,16 @@ fun ColorDetailScreen() {
                     }
                     Spacer(modifier = Modifier.height(15.dp))
                     Text(
-                        text = color.rgb.toString(),
-                        fontSize = 20.sp
+                        text = color.rgb.r.toString() +","+ color.rgb.g.toString() +","+color.rgb.b.toString(),
+                        fontSize = 20.sp,
+                        color = Color.Red
                     )
                     Spacer(modifier = Modifier.height(15.dp))
                     Text(
                         text = "Team members",
                         fontSize = 20.sp,
-                        fontWeight = FontWeight.Bold
+                        fontWeight = FontWeight.Bold,
+                        color = Color.Red
                     )
                 }
             }

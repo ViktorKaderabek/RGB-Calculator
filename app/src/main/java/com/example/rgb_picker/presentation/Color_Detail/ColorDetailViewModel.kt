@@ -18,10 +18,10 @@ class ColorDetailViewModel(
     private var r : String? = null
     private var g : String? = null
     private var b : String? = null
-    private val rgbColor : String = "id?rgb=${r},${g},${b}"
+    private val rgbColor : String = "${r},${g},${b}"
 
     init {
-        getColorsByRgb("id?rgb=0,71,171")
+        getColorsByRgb("0,71,171")
     }
 
     private fun getColorsByRgb(rgbColor : String) {

@@ -7,6 +7,6 @@ import retrofit2.http.Query
 
 interface ThecolorApi {
 
-    @GET("/id{rgb}")
-    suspend fun getCoinsByRgb(@Path("rgb") rgb : String) : ColorDetailDto
+    @GET("/id")
+    suspend fun getCoinsByRgb(@Query("rgb") rgb : String) : ColorDetailDto
 }
